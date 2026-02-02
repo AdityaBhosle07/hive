@@ -79,11 +79,19 @@ cd hive
 # Run quickstart setup
 ./quickstart.sh
 ```
-
 This sets up:
 - **framework** - Core agent runtime and graph executor (in `core/.venv`)
 - **aden_tools** - MCP tools for agent capabilities (in `tools/.venv`)
 - All required Python dependencies
+
+### Verify quickstart
+
+After `./quickstart.sh` completes, confirm both virtual environments were created:
+```bash
+
+./core/.venv/bin/python -m pip --version
+./tools/.venv/bin/python -m pip --version
+```
 
 ### Build Your First Agent
 
